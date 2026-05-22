@@ -1,0 +1,11 @@
+# Morning report at 07:00
+0 7 * * * /opt/daily-ops/morning_report.sh
+
+# Weekly cleanup Sunday 02:00
+0 2 * * 0 /opt/daily-ops/weekly_cleanup.sh
+
+# Nightly backup at 23:00
+0 23 * * * /opt/daily-ops/nightly_backup.sh
+
+# Disk alert every 4 hours
+0 */4 * * * /opt/daily-ops/disk_usage_alert.sh
